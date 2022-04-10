@@ -12,6 +12,10 @@ Bold: 700
 
 - Line heights
 Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
 
 - Letter spacing
 -0.5px
@@ -20,7 +24,6 @@ Default: 1
 --- 02 COLORS
 
 - Primary: #e67e22
-
 - Tints:  from (https://maketintsandshades.com/)
 #fdf2e9
 #fae5d3
@@ -31,24 +34,24 @@ Default: 1
 #45260a
 
 - Accents:
+- Greys
 
-- Greys:
 #888
 #767676 (lightest grey allowed on #fff)
 #6f6f6f (lightest grey allowed on #fdf2e9)
 #555
 #333
 
---- 05 SHADOWS
+--- 03 SHADOWS
 
 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
---- 06 BORDER-RADIUS
+--- 04 BORDER-RADIUS
 
 Default: 9px
 Medium: 11px
 
---- 07 WHITESPACE
+--- 05 WHITESPACE
 
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -80,6 +83,11 @@ body {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /**************************/
@@ -166,6 +174,18 @@ body {
 
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
