@@ -10,9 +10,13 @@
   <!-- To Use Media Queries -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Favicon -->
   <link rel="icon" href="img/favicon.png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
 
   <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Styles -->
@@ -90,7 +94,10 @@
         </div>
         <div class="hero-img-box">
           <picture>
-            <img src="img/hero.png" class="hero-img"
+            <source srcset="img/hero.webp" type="image/webp" />
+            <source srcset="img/hero-min.png" type="image/png" />
+
+            <img src="img/hero-min.png" class="hero-img"
               alt="Woman enjoying food, meals in storage container, and food bowls on a table" />
           </picture>
         </div>
